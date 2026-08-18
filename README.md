@@ -5,7 +5,8 @@ What is Patchwork
 Patchwork is a tool that helps software teams publish their release notes as a clean embeddable widget instead of a forgotten markdown file. This repo is the marketing homepage for that product.
 
 Live Demo
-Add your deployed URL here
+Add your deployed URL here:
+https://acdyon-tech.vercel.app/
 
 What is in this repo
 index.html — all the page content and structure styles.css — all the design, dark mode only main.js — interactivity including scroll effects, filter buttons, copy button, email form, and easter egg DECISIONS.md — written explanation of the decisions made while building this
