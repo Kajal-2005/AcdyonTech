@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patchwork — Changelogs people actually read</title>
+  <meta name="description" content="Stop burying your updates in a markdown file. Patchwork gives every release a proper home." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="logo-mark">▲</span>
+        Patchwork
+      </a>
+      <div class="nav-links">
+        <a href="#problem">Why</a>
+        <a href="#demo">Demo</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <a href="#signup" class="btn btn-sm">Get access</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+
+      <div class="hero-badge fade-up">
+        <span class="badge-dot"></span>
+        Private beta &nbsp;·&nbsp; 40 teams already using it
+      </div>
+
+      <h1 class="hero-headline fade-up delay-1">
+        Your users never see<br>the features you built.
+      </h1>
+
+      <p class="hero-sub fade-up delay-2">
+        Most teams dump release notes in a GitHub file nobody opens.
+        Patchwork turns your updates into a page your users
+        actually want to read — and it takes 5 minutes to set up.
+      </p>
+
+      <div class="hero-btns fade-up delay-3">
+        <a href="#signup" class="btn btn-primary">Try it free →</a>
+        <a href="#demo" class="btn btn-ghost">See how it looks ↓</a>
+      </div>
+
+      <div class="hero-facts fade-up delay-4">
+        <span>✓ Free to start</span>
+        <span>✓ No credit card</span>
+        <span>✓ One line of code</span>
+      </div>
+
+    </div>
+
+    <div class="hero-grid" aria-hidden="true">
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+      <div class="grid-line"></div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem" id="problem">
+    <div class="container">
+
+      <span class="section-label fade-up">The problem</span>
+      <h2 class="section-h2 fade-up delay-1">You ship. Nobody notices.</h2>
+      <p class="section-desc fade-up delay-2">
+        A Slack message disappears in 3 hours. A Notion doc nobody bookmarks.
+        A GitHub file nobody opens. Your users never find out what you built for them.
+      </p>
+
+      <div class="compare fade-up delay-3">
+
+        <div class="compare-card compare-bad">
+          <div class="compare-top">
+            <span class="tag tag-bad">Before</span>
+          </div>
+          <div class="compare-body">
+            <div class="fake-line w-80"></div>
+            <div class="fake-line w-60"></div>
+            <div class="fake-line w-70"></div>
+            <div class="fake-line w-40"></div>
+          </div>
+          <div class="compare-footer">
+            📄 CHANGELOG.md &nbsp;·&nbsp; last updated 6 months ago
+          </div>
+        </div>
+
+        <div class="compare-arrow">→</div>
+
+        <div class="compare-card compare-good">
+          <div class="compare-top">
+            <span class="tag tag-good">After</span>
+          </div>
+          <div class="compare-body">
+            <div class="mini-entry">
+              <span class="badge badge-new">New</span>
+              <div>
+                <div class="mini-title">Dark mode is here</div>
+                <div class="mini-sub">Toggle it in Settings → Appearance</div>
+              </div>
+            </div>
+            <div class="mini-entry">
+              <span class="badge badge-fix">Fix</span>
+              <div>
+                <div class="mini-title">Export no longer freezes</div>
+                <div class="mini-sub">Fixed a timeout on large files</div>
+              </div>
+            </div>
+            <div class="mini-entry">
+              <span class="badge badge-improved">Improved</span>
+              <div>
+                <div class="mini-title">Faster search results</div>
+                <div class="mini-sub">Rewrote the indexing layer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO -->
+  <section class="demo" id="demo">
+    <div class="container">
+
+      <span class="section-label fade-up">Live demo</span>
+      <h2 class="section-h2 fade-up delay-1">This is the actual widget.</h2>
+      <p class="section-desc fade-up delay-2">
+        Not a screenshot. Click the filter buttons — they work right now on this page.
+      </p>
+
+      <div class="demo-layout fade-up delay-3">
+
+        <!-- the working widget -->
+        <div class="widget">
+          <div class="widget-header">
+            <span class="widget-title">What's new</span>
+            <div class="widget-filters">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="new">New</button>
+              <button class="filter-btn" data-filter="fix">Fix</button>
+              <button class="filter-btn" data-filter="improved">Improved</button>
+            </div>
+          </div>
+
+          <ul class="widget-list">
+            <li class="widget-item" data-type="new">
+              <span class="badge badge-new">New</span>
+              <div>
+                <div class="wi-date">Aug 15, 2026</div>
+                <div class="wi-title">Slack notifications on every publish</div>
+                <div class="wi-desc">Post to any channel the moment a changelog goes live.</div>
+              </div>
+            </li>
+            <li class="widget-item" data-type="improved">
+              <span class="badge badge-improved">Improved</span>
+              <div>
+                <div class="wi-date">Aug 10, 2026</div>
+                <div class="wi-title">Editor is 40% faster</div>
+                <div class="wi-desc">Measured on our own machine — your results may vary.</div>
+              </div>
+            </li>
+            <li class="widget-item" data-type="fix">
+              <span class="badge badge-fix">Fix</span>
+              <div>
+                <div class="wi-date">Aug 5, 2026</div>
+                <div class="wi-title">Widget no longer flickers on load</div>
+                <div class="wi-desc">A CSS transition was firing before fonts loaded. Fixed.</div>
+              </div>
+            </li>
+            <li class="widget-item" data-type="new">
+              <span class="badge badge-new">New</span>
+              <div>
+                <div class="wi-date">Jul 28, 2026</div>
+                <div class="wi-title">Custom domain support</div>
+                <div class="wi-desc">Point changelog.yourdomain.com to Patchwork in 2 minutes.</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="widget-footer">View all updates →</div>
+        </div>
+
+        <!-- embed code -->
+        <div class="demo-right">
+          <p class="demo-right-label">To embed this in your app:</p>
+          <div class="code-box">
+            <code>&lt;script src="patchwork.io/w.js"<br>&nbsp;&nbsp;data-id="<span class="code-hi">your-slug</span>"&gt;&lt;/script&gt;</code>
+            <button class="copy-btn" id="copy-btn">
+              <span id="copy-label">Copy</span>
+            </button>
+          </div>
+          <p class="demo-right-note">That's it. One line. Your users see it instantly.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section class="steps-section" id="how">
+    <div class="container">
+
+      <span class="section-label fade-up">Setup</span>
+      <h2 class="section-h2 fade-up delay-1">Three steps, then you're done.</h2>
+
+      <div class="steps fade-up delay-2">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Create a project</h3>
+          <p>Give it a name and a colour. Connect your GitHub repo if you want auto-drafts from pull request titles.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Write your first entry</h3>
+          <p>Tag it New, Improved, or Fix. Write one sentence about what changed. Publish or schedule it.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Paste one script tag</h3>
+          <p>Drop it in your app or share the public URL. Your users can now see exactly what you shipped.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+
+      <span class="section-label fade-up">Pricing</span>
+      <h2 class="section-h2 fade-up delay-1">Simple, honest pricing.</h2>
+      <p class="section-desc fade-up delay-2">
+        We are in beta. It is free right now and we will warn you before that changes.
+      </p>
+
+      <div class="plans fade-up delay-3">
+
+        <div class="plan">
+          <div class="plan-name">Free</div>
+          <div class="plan-price">$0 <span>/ month</span></div>
+          <div class="plan-desc">Good for solo builders.</div>
+          <ul class="plan-features">
+            <li>1 project</li>
+            <li>Unlimited entries</li>
+            <li>Hosted changelog page</li>
+            <li>Embeddable widget</li>
+            <li>Patchwork branding</li>
+          </ul>
+          <a href="#signup" class="btn btn-outline btn-full">Get started free</a>
+        </div>
+
+        <div class="plan plan-featured">
+          <div class="plan-badge">Beta price</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">$9 <span>/ month</span></div>
+          <div class="plan-desc">For teams who ship often.</div>
+          <ul class="plan-features">
+            <li>Unlimited projects</li>
+            <li>Custom domain</li>
+            <li>Remove Patchwork branding</li>
+            <li>Slack &amp; Discord alerts</li>
+            <li>View counts per entry</li>
+            <li>GitHub PR auto-draft</li>
+          </ul>
+          <a href="#signup" class="btn btn-primary btn-full">Start free trial</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNUP -->
+  <section class="signup-section" id="signup">
+    <div class="container">
+      <div class="signup-box fade-up">
+        <h2>Your next release deserves an audience.</h2>
+        <p>Join the beta. Free to start. We would rather have your honest feedback than your money right now.</p>
+        <form id="signup-form">
+          <input type="email" id="email-input" placeholder="you@yourcompany.com" />
+          <button type="submit" class="btn btn-primary">Request access</button>
+        </form>
+        <p class="signup-fine">No spam. No newsletter unless you opt in.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="nav-logo">
+          <span class="logo-mark">▲</span>
+          Patchwork
+        </span>
+        <span class="footer-tagline">Changelogs people actually read.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EASTER EGG — hover the logo 5 times -->
+  <div class="egg-overlay" id="egg-overlay" aria-hidden="true">
+    <div class="egg-card">
+      <div class="egg-emoji">🐣</div>
+      <h3>You found it.</h3>
+      <p>5 hovers on the logo. Curious people build better products.<br>Use code <strong>CURIOUS</strong> for 3 months free when we launch.</p>
+      <button class="btn btn-primary" id="egg-close">Nice, close this</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
